@@ -1,11 +1,11 @@
-Write a program to get two integers from the user and print the sum of the two integers?
+1. Write a program to get two integers from the user and print the sum of the two integers?
 
 #include <stdio.h>
 
 int input()
 {
     int a;
-    printf("enter the integer:");
+    printf("\n enter the integer:");
     scanf("%d",&a);
     
     return a;
@@ -18,18 +18,101 @@ int compute(int c,int d)
     return sum;
 }
 
-int output(int s)
+int output(int sum)
 {
-   printf("%d \n ",s);
+   printf("\n sum is %d \n ",sum);
 }
 
 
 int main()
 {
-    int a,b,c,d,res;
+    int c,d,res;
     c = input();
     d = input();
     res = compute(c,d);
     output(res);
     
+}
+
+2.  Write a function to add two integers. 
+int compute(int c,int d)
+{
+    int sum;
+    sum = c + d;
+    return sum;
+}
+
+
+3.  Write a program to get two float from the user and print the sum of the two float?
+
+#include <stdio.h>
+
+float input()
+{
+    float a;
+    printf("\n enter the integer:");
+    scanf("%f",&a);
+    
+    return a;
+}
+
+float compute(float c,float d)
+{
+    float sum;
+    sum = c + d;
+    return sum;
+}
+
+float output(float sum)
+{
+   printf("\n sum is %f \n ",sum);
+}
+
+
+float main()
+{
+    float c,d,res;
+    c = input();
+    d = input();
+    res = compute(c,d);
+    output(res);
+    
+}
+
+4.  Write a function to add two float. 
+
+float compute(float c,float d)
+{
+    float s;
+    s = c + d;
+    return s;
+}
+
+
+5. Write a function to compare 2 numbers and test it.
+
+int compare(int p,int r)
+{
+    int y;
+    y = p > r ? p : r;
+    return y;
+}
+
+6. Write a function to compare 3 numbers and test it.
+int compare(int x, int y, int z)
+{
+  if(x > y)
+  {
+     if(x > z)
+       return x;
+     else
+       return z;
+  }
+  else
+  {
+     if(y > z)
+       return y;
+     else
+       return z; 
+  }
 }
